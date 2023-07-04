@@ -101,16 +101,15 @@ class Stack
                             while(stacktop()!='(')
                             {
                                cout<<"\t"<<pop();
-                               pop();
-                            }
                         }
+                            pop();
                         else
                         {
                             while(isp(stacktop())>=icp(exp[i]))
                             {
                                 cout<<pop();
+                                pop();
                             }
-                             pop();
                         push(exp[i]);
                         }
                     }
